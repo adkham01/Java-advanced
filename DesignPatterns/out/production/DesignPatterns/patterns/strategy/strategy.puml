@@ -1,0 +1,26 @@
+@startuml
+    class Animal{
+        + flingType: Flys
+        + tryToFly(): String
+        + setFlyingAbility: void
+    }
+
+    Interface Flys{
+        + fly(): String
+    }
+
+    Class Dog {
+    }
+    class Bird{
+    }
+    class ItFlys{
+        + fly(): String
+    }
+
+    Animal <|-- Dog
+    Animal <|--Bird
+
+    Flys <.. ItFlys
+    Animal --> Flys
+    ItFlys ..|>Flys
+@enduml

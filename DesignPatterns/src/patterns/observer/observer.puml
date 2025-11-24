@@ -1,0 +1,24 @@
+@startuml
+    Class Subject {
+        + register(Observer o): void
+        + unregister((Observer o): void
+        + notifyObserver(): void
+    }
+
+    Interface Observer {
+        + update(): void
+    }
+
+    Class IBMPrice {
+        + update(): void
+    }
+
+    Class ApplePrice {
+            + update(): void
+    }
+
+    Subject *-- Observer
+    Observer <|.. IBMPrice
+    Observer <|.. ApplePrice
+
+@enduml

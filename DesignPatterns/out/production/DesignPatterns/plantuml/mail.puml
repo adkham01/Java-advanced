@@ -1,0 +1,11 @@
+@startuml
+start
+:Open mail;
+if() then (is important)
+:Read Mail;
+else (is junk)
+:Delete mail;
+endif
+stop
+
+@enduml

@@ -1,0 +1,33 @@
+@startuml
+Class Client{}
+
+Class EnemyshipFactory{
+    + makeEnemyShip(String): Ship
+}
+
+Abstract Class EnemyShip {
+    - name: String
+    - amtDamage: double
+    + followHeroShip:() void
+    + displayEnemyShip(): void
+    + enemyShipShoots(): void
+    + setDame(double): void
+    + getDame(): double
+}
+
+Class UFOEnemyShip {
+    + setName(String): void
+    + getName() :String
+}
+
+Class RocketEnemyShip {
+    + setName(String): void
+    + getName() :String
+}
+
+Client --> EnemyshipFactory
+EnemyShip <|... EnemyshipFactory
+UFOEnemyShip ...> EnemyShip
+RocketEnemyShip ...> EnemyShip
+
+@enduml

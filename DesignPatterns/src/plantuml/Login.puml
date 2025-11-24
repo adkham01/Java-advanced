@@ -1,0 +1,10 @@
+@startuml
+    actor User as u
+    u -> LoginScreen : Click on login button
+    LoginScreen -> ValidateUser : Validate u
+    ValidateUser -> Database: userId: Found\nPassword: found
+    Database --> ValidateUser : u validated
+    ValidateUser --> LoginScreen : u validation successful
+    LoginScreen -> LoginScreen : Login
+    LoginScreen --> u : Successful login
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+
+Interface Visitor {
+    +visit(Liquor): double
+    +visit(Tobacco): double
+    +visit(Necessity): double
+}
+Interface Visitable {
+    +accept(Visitor): double
+}
+
+Class TaxVisitor {
+    +visit(Liquor): double
+    +visit(Tobacco): double
+    +visit(Necessity): double
+}
+
+Class Necessity {
+    +accept(Visitor): double
+}
+
+TaxVisitor --> Visitor
+Necessity --> Visitable
+
+@enduml

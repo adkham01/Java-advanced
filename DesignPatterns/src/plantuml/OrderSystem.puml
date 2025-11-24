@@ -1,0 +1,58 @@
+@startuml
+    class Customer{
+        - name: String
+        - address: String
+        + getCustomerInformation(): void
+    }
+
+    Class Order{
+        - date: date
+        - status: String
+        + calculateTotal: double
+        + calculateTax: double
+    }
+    class OrderDetail{
+        - quantity: int
+        - taxStatus: String
+        + calcSubTotal(): double
+        + calcWeight(): double
+        + calcTax(): double
+    }
+
+    Class Item{
+        - shippingWeight: double
+        - description: String
+    }
+
+    Abstract Class Payment{
+        - amount: double
+    }
+
+    Class Cash{
+        - CashAmount: double
+    }
+
+    Class Check{
+        - name: String
+        - bankId: String
+        + authorized: boolean
+    }
+
+    Class Credit{
+        - number: String
+        - type: String
+        - expDate: date
+        + authorized: boolean
+    }
+
+    Customer "1" -- "0..*" Order
+
+    Payment <|-- Check
+    Payment <|-- Credit
+    Payment <|-- Cash
+
+    Order "1" -- "1..*" Payment
+
+    Order"1" o-- "1..*" OrderDetail
+    OrderDetail "0..*" --> Item
+@enduml

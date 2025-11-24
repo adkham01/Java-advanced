@@ -1,0 +1,17 @@
+@startuml
+
+start
+    repeat
+        :Test: something;
+        if (Something went wrong?)
+            #palegreen:OK;
+            break
+        endif
+        ->NOK;
+        :Arlet "Error with long text";
+    repeat while (Something went wrong with long text?)
+      ->no;
+      :Arlet "Success";
+stop
+
+@enduml

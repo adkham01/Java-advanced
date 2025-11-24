@@ -1,0 +1,9 @@
+@startuml
+    Class Dog{
+        + name: String
+        # id: int
+        - color: String
+        + getName(): String
+
+    }
+@enduml

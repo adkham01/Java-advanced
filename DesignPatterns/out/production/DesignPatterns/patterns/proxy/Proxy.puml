@@ -1,0 +1,23 @@
+@startuml
+Class Client {}
+
+Interface GetAtmState {
+    +getAtmState(): AtmState
+    +getCashInMachine(): double
+}
+Class AtmProxy {
+    +getAtmState(): AtmState
+    +getCashInMachine(): double
+}
+
+Class AtmMachine {
+    +getAtmState(): AtmState
+    +getCashInMachine(): double
+}
+
+
+Client ...> GetAtmState
+AtmProxy ...> GetAtmState
+AtmMachine ...> GetAtmState
+AtmProxy --> AtmMachine
+@enduml

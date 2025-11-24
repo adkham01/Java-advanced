@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="03806258-c9b5-47b2-87f9-67753ca1355d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_14.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_15.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_16.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_17.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_18.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_19.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_20.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_21.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_22.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_23.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_24.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_25.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_26.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_27.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_28.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_29.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_30.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_31.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_32.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Framework/Collection/CollectionFramework_9.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Q61EBcvWPAdWy7TcN0Jrjmpt9z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/javaide/CollectionFramework",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03806258-c9b5-47b2-87f9-67753ca1355d" name="Changes" comment="" />
+      <created>1684659103924</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684659103924</updated>
+      <workItem from="1684659104837" duration="84000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

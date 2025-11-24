@@ -1,0 +1,32 @@
+@startuml
+
+Interface Mediator {
+    +saleOffer(stock, shares, coll)
+    +buyOffer(stock, shares, coll)
+    +addColleague(coll)
+}
+Abstract Class Colleague {
+    +saleOffer(stock, shares, coll)
+    +buyOffer(stock, shares, coll)
+}
+
+Class ConcreteMediator {
+    +saleOffer(stock, shares, coll)
+    +buyOffer(stock, shares, coll)
+    +addColleague(coll)
+}
+Class ConcreteColleague {
+    +saleOffer(stock, shares, coll)
+    +buyOffer(stock, shares, coll)
+}
+
+Class Client {}
+Mediator <-- ConcreteMediator
+Client -> ConcreteMediator
+Client -> ConcreteColleague
+Colleague <-- ConcreteColleague
+Colleague --> Mediator
+ConcreteMediator --> ConcreteColleague
+
+
+@enduml

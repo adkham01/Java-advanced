@@ -1,0 +1,45 @@
+.
+? make the patten optional
+| or
+\w word
+\W not a word
+\s space
+\S not a space
+\d digit
+\D not a digit
+\b word boundary
+\B not a word boundary
+^ start of line
+$ end of line
+\A start of string
+\Z end of string
+\d{3} number of times the digit repeat
+\d{2,5} number of times the digit repeat (2) is min and (5) is max
+\d{2,} number of times the digit repeat (2) is min and (infinity) is max
+\d* number of times the digit repeat (0) is min and (infinity) is max
+\d+ number of times the digit repeat (1) is min and (infinity) is max
+(html|body) match either html or body
+<h1>(.*?)<\/h1> match the content between <h1> and </h1>.
+
+Character classes.
+[\d\w] matching any digits or letters.
+[\d\w]+ matching any number of digits or letters.
+[0-5] matching range of digits.
+[a-z]+ matching range of letters.
+[A-Z]+ matching range of uppercase letters.
+[a-zA-Z\/\s]+ matching range of letters and symbols.
+[^\s]+ everything except spaces.
+(\w{3}-) matching three letters followed by a hyphen.
+(\w{3}-\d{3}-) .*?\1 matching three letters followed by a hyphen and three
+digits followed by the same hyphen.
+
+Positive lookahead and lookbehind.
+\w(?=\s)
+>(?!\s) look for the right arrow not followed by a space.
+^(?!.*html).*?$ match every line except HTML.
+
+Flags | Modifiers
+i case insensitive
+g global
+m multi line
+.*?\.\w+ match any line ending with a period followed by one or more letters.

@@ -1,0 +1,28 @@
+@startuml
+Interface Pizza {
+    + getDescription(): String
+    + getCost: double
+}
+Class PlainPizza {
+    + getDescription(): String
+    + getCost: double
+}
+
+Abstract Class ToppingDecorator{
+    - Pizza tempPizza
+    + ToppingDecorator(Pizza)
+    + getDescription(): String
+    + getCost: double
+}
+Class Mozzarella{
+    + Mozzarella(Pizza)
+    + getDescription: String
+    + getCost: double
+}
+
+ToppingDecorator *-- Pizza
+ToppingDecorator --> Mozzarella
+PlainPizza -- ToppingDecorator
+PlainPizza --|> Pizza
+
+@enduml

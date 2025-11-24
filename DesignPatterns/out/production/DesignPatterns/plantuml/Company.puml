@@ -1,0 +1,32 @@
+@startuml
+    object Company
+    object Department01 {
+        name = Sales
+    }
+
+    Object Department02 {
+        name = Production
+    }
+
+    Object Department03{
+        name = Marketing
+    }
+
+    Object Person{
+        name = Daniel
+        employeeId = 2377
+        title = Vip of Sales
+    }
+
+    Object ContactInformation{
+        email = daniel@gmail.com
+    }
+
+    Department01 -- Company
+    Department02 -- Company
+    Department01 -- Person
+    Department03 -- Company
+    Person -- ContactInformation
+
+
+@enduml

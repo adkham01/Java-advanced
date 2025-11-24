@@ -1,0 +1,41 @@
+@startuml
+Interface ATMState {
+    + insertCard(): void
+    + ejectCard(): void
+    + insertPin(int): void
+    + requestCash(int): void
+}
+
+Class HasCard {
+    + insertCard(): void
+    + ejectCard(): void
+    + insertPin(int): void
+    + requestCash(int): void
+}
+
+Class ATMMachine {
+    - ATMState atmState
+    - ATMState hasCard
+    - ATMState noCard
+    - ATMState hasPin
+    - ATMState noCash
+    - cashInMachine
+    - correctPinEntered
+
+    + setATMState(ATMState)
+    + insertCard(): void
+    + ejectCard(): void
+    + insertPin(int): void
+    + requestCash(int): void
+
+}
+Class NoCard {}
+Class HasPin {}
+Class NoCash {}
+
+ATMState <.. HasCard
+ATMState <.. HasPin
+ATMState <.. NoCash
+ATMState <.. NoCard
+
+@enduml

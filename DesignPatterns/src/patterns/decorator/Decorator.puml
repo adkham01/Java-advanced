@@ -1,0 +1,34 @@
+@startuml
+    Abstract class Component {
+    + methodA()
+    + methodB()
+    }
+
+    Class ComponentImp {
+        + methodA()
+        + methodB()
+    }
+
+    Abstract class Decorator {
+        + methodA()
+        + methodB()
+    }
+
+    Class DecoratorImp1 {
+        + methodA()
+        + methodB()
+    }
+
+    Class DecoratorImp2 {
+        + methodA()
+        + methodB()
+    }
+
+    Component <|-- ComponentImp
+    Component <|-- Decorator
+    Component o-- Decorator
+
+    Decorator <|-- DecoratorImp1
+    Decorator <|-- DecoratorImp2
+
+@enduml

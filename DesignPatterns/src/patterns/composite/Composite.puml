@@ -1,0 +1,31 @@
+@startuml
+Interface SongComponent {
+    +add(): void
+    +getSongName(): String
+    +getBandName(): String
+    +displaySongInfo(): void
+}
+
+Class SongGroup {
+    +groupName
+    +groupDesc
+    +songComponents
+    +displaySongInfo: void
+}
+
+Class Song {
+    +songName
+    +bandName
+    +getSongName(): String
+    +getBandName(): String
+    +displaySongInfo(): void
+}
+Class Composite{}
+Class Leaf{}
+
+SongComponent <.. SongGroup
+Song <-- SongGroup
+Composite --> SongGroup
+Leaf --> Song
+
+@enduml

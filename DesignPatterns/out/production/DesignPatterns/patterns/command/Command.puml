@@ -1,0 +1,24 @@
+@startuml
+
+Interface Device {
+    + on(): void
+    + off(): void
+}
+Interface Command {
+    + execute(): void
+}
+
+Class Television {
+    + on(): void
+    + off(): void
+}
+
+Class TurnTVOn {
+    + Television
+    + execute(): void
+}
+
+Device <... Television
+Command <... TurnTVOn
+
+@enduml

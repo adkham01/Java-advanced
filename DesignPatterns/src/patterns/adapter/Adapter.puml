@@ -1,0 +1,25 @@
+@startuml
+Class Client {}
+
+Interface EnemyAttacker {
+    + fireWeapon(): void
+    + driveForward(): void
+    + assignDriver(String): void
+}
+
+Class EnemyRobotAdapter{
+    + EnemyRobot
+    + fireWeapon(): void
+    + driveForward(): void
+    + assignDriver(String): void
+}
+Class EnemyRobot {
+    + smashWithHand(): void
+    + walkForward(): void
+    + reactToHuman((String): void
+}
+
+Client --> EnemyAttacker
+EnemyRobotAdapter ..> EnemyAttacker
+EnemyRobotAdapter --> EnemyRobot
+@enduml

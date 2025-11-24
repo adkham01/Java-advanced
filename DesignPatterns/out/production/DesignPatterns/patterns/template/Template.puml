@@ -1,0 +1,27 @@
+@startuml
+Abstract class Hoagie{
+    +makeSandwich(): void
+
+    +CatBun(): void
+    +addMeat(): void
+    +addCheese(): void
+    +addVeggies(): void
+    +wrapHoagie(): void
+
+    +wantMeat(): boolean
+    +wantCheese(): boolean
+    +wantVeggies(): boolean
+}
+
+Class ItalianHoagie{
+    +addMeat(): void
+    +addCheese():void
+    +addVeggies(): void
+
+    +wantMeat(): boolean
+        +wantCheese(): boolean
+        +wantVeggies(): boolean
+}
+
+Hoagie ..> ItalianHoagie
+@enduml

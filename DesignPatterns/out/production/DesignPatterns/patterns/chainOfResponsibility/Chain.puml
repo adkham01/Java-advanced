@@ -1,0 +1,23 @@
+@startuml
+Class  Client {}
+Class Chain {
+    + setNextChain(Chain): void
+    + calculate(Numbers): void
+}
+
+Class AddNumbers {
+    - Chain nextChain
+    + setNextChain(Chain): void
+    + calculate(Numbers): void
+}
+
+Class SubtractNumbers {
+    - Chain nextChain
+    + setNextChain(Chain): void
+    + calculate(Numbers): void
+}
+
+Client .> Chain
+AddNumbers ..> Chain
+SubtractNumbers ..> Chain
+@enduml

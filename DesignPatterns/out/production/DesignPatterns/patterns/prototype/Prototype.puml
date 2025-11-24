@@ -1,0 +1,24 @@
+@startuml
+
+Class Client {}
+Class PrototypeFactory {
+    +getClone(Prototype: Prototype
+}
+
+Interface Prototype {
+    + makeCopy() Animal
+}
+Class Sheep {
+    + makeCopy() Animal
+}
+Class Dog {
+    + makeCopy() Animal
+}
+
+Client ..> PrototypeFactory
+Prototype <.. PrototypeFactory
+Prototype <.. Sheep
+Prototype <.. Dog
+
+
+@enduml
