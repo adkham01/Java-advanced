@@ -1,0 +1,23 @@
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Compiled class files
+*.class
+
+# Build tool outputs
+target/
+build/
+
+# Log files
+*.log
+
+# JVM crash logs
+hs_err_pid*
+
+# OS specific
+.DS_Store
+Thumbs.db
